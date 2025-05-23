@@ -132,6 +132,7 @@ Todo caso de uso deve conter:
 Ele representa os atores de um sistema (como pequenos bonecos) e os casos de uso (como elipses). Mostram-se também dois tipos de relacionamento: (1) ligando ator com caso de uso, que indicam que um ator participa de um determinado caso de uso; (2) ligando dois casos de uso, que indicam que um caso de uso inclui ou estende outro caso de uso.
 
 ✅ **---Include--->**
+
 O relacionamento _include_ indica que um caso de uso sempre inclui outro caso de uso como parte de sua execução.
 
 - O caso de uso incluído é chamado automaticamente sempre que o principal é executado.
@@ -141,6 +142,7 @@ O relacionamento _include_ indica que um caso de uso sempre inclui outro caso de
 **Exemplo**: No sistema de compras online, o caso de uso "Finalizar Pedido" pode incluir o caso de uso "Calcular Frete", pois esse cálculo sempre ocorre durante a finalização.
 
 ✅ **---Extend--->**
+
 O relacionamento _extend_ indica que um caso de uso pode estender outro, ou seja, adicionar comportamento opcional, que ocorre apenas em certas condições.
 
 - Representa uma funcionalidade opcional, que só é executada sob certas condições.
@@ -148,6 +150,18 @@ O relacionamento _extend_ indica que um caso de uso pode estender outro, ou seja
 - Caso de uso estendido só é ativado se a condição for atendida.
 
 **Exemplo**: O caso de uso "Finalizar Pedido" pode estender o caso de uso "Aplicar Cupom de Desconto", pois essa ação só acontece se o usuário inserir um cupom.
+
+✅ **---->**
+
+A seta propriamente dita representa qual ator tem relacionamente ou "vê" qual funcionalidade no software.
+
+- Representa uma interação entre ator e função (um requisito funcional)
+
+✅ **(Use Case)**
+
+Um caso de uso é um elemento da UML utilizado para representar uma funcionalidade específica que o sistema deve oferecer, ou seja, um requisito funcional. Ele é mostrado nos diagramas de caso de uso como uma elipse com o nome da funcionalidade dentro
+
+- Um requisito funcional do sistema (uma funcionalidade que o sistema deve oferecer)
 
 ![imagem_diagrama](/image/diagrama.png)
 
